@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>শুভ জন্মদিন রওজাতুন জান্নাত 🎂</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    font-family:"Noto Sans Bengali","SolaimanLipi",Arial,sans-serif;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4,#fbc2eb);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow-x:hidden;
+    color:#fff;
+}
+
+/* Background stars */
+.star{
+    position:fixed;
+    width:4px;
+    height:4px;
+    background:white;
+    border-radius:50%;
+    animation:twinkle 2s infinite alternate;
+    opacity:.8;
+}
+
+@keyframes twinkle{
+    from{opacity:.2; transform:scale(.6);}
+    to{opacity:1; transform:scale(1.4);}
+}
+
+/* Balloons */
+.balloon{
+    position:fixed;
+    width:55px;
+    height:70px;
+    border-radius:50% 50% 45% 45%;
+    animation:float 5s ease-in-out infinite;
+    z-index:1;
+}
+
+.balloon::after{
+    content:"";
+    position:absolute;
+    width:1px;
+    height:100px;
+    background:#fff;
+    top:68px;
+    left:50%;
+}
+
+.b1{background:#ff4f81;left:5%;top:15%;}
+.b2{background:#7b61ff;right:7%;top:22%;animation-delay:1s;}
+.b3{background:#ffd166;left:10%;bottom:10%;animation-delay:2s;}
+.b4{background:#06d6a0;right:10%;bottom:12%;animation-delay:3s;}
+
+@keyframes float{
+    0%,100%{transform:translateY(0) rotate(-3deg);}
+    50%{transform:translateY(-25px) rotate(4deg);}
+}
+
+/* Main card */
+.card{
+    width:92%;
+    max-width:650px;
+    padding:35px 25px;
+    text-align:center;
+    border-radius:30px;
+    background:rgba(255,255,255,.17);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.35);
+    box-shadow:0 20px 60px rgba(100,0,60,.25);
+    position:relative;
+    z-index:5;
+}
+
+.small{
+    font-size:20px;
+    margin-bottom:8px;
+}
+
+h1{
+    font-size:clamp(32px,8vw,58px);
+    color:#fff;
+    text-shadow:0 4px 15px rgba(150,0,70,.4);
+    margin-bottom:12px;
+}
+
+.subtitle{
+    font-size:19px;
+    margin-bottom:25px;
+}
+
+/* Cake */
+.cake{
+    font-size:80px;
+    animation:bounce 1.5s infinite;
+    margin:10px 0 15px;
+}
+
+@keyframes bounce{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+}
+
+/* Button */
+button{
+    border:none;
+    padding:14px 28px;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:bold;
+    color:#ff3974;
+    background:white;
+    cursor:pointer;
+    box-shadow:0 8px 25px rgba(0,0,0,.18);
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.06);
+}
+
+/* Message */
+.message{
+    display:none;
+    margin-top:28px;
+    text-align:left;
+    background:rgba(255,255,255,.20);
+    padding:25px;
+    border-radius:22px;
+    line-height:2;
+    font-size:18px;
+    animation:show .8s ease;
+}
+
+.message.show{
+    display:block;
+}
+
+.message .title{
+    text-align:center;
+    font-size:25px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.final{
+    text-align:center;
+    font-size:25px;
+    font-weight:bold;
+    margin-top:18px;
+}
+
+/* Hearts */
+.heart{
+    position:fixed;
+    bottom:-30px;
+    font-size:25px;
+    animation:heartUp 5s linear forwards;
+    z-index:10;
+}
+
+@keyframes heartUp{
+    0%{
+        transform:translateY(0) scale(.7);
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-110vh) scale(1.4);
+        opacity:0;
+    }
+}
+
+/* Mobile */
+@media(max-width:500px){
+    .card{
+        padding:28px 17px;
+    }
+
+    .message{
+        font-size:16px;
+        line-height:1.9;
+    }
+
+    .cake{
+        font-size:65px;
+    }
+
+    .balloon{
+        transform:scale(.75);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Stars -->
+<div class="star" style="left:12%;top:8%;"></div>
+<div class="star" style="left:25%;top:30%;animation-delay:.5s;"></div>
+<div class="star" style="left:70%;top:12%;animation-delay:1s;"></div>
+<div class="star" style="left:85%;top:40%;animation-delay:1.5s;"></div>
+<div class="star" style="left:40%;top:75%;animation-delay:.8s;"></div>
+<div class="star" style="left:60%;top:88%;animation-delay:1.2s;"></div>
+
+<!-- Balloons -->
+<div class="balloon b1"></div>
+<div class="balloon b2"></div>
+<div class="balloon b3"></div>
+<div class="balloon b4"></div>
+
+<div class="card">
+
+    <div class="small">🌸 বিশেষ একজনের জন্য 🌸</div>
+
+    <h1>রওজাতুন জান্নাত</h1>
+
+    <div class="subtitle">
+        তোমাকে জানাই জন্মদিনের অনেক অনেক শুভেচ্ছা 💖
+    </div>
+
+    <div class="cake">🎂</div>
+
+    <button onclick="showMessage()">
+        💌 শুভেচ্ছা দেখুন
+    </button>
+
+    <div class="message" id="message">
+
+        <div class="title">
+            🌸 প্রিয় রওজাতুন জান্নাত, 🌸
+        </div>
+
+        <p>
+            আজকের এই বিশেষ দিনে তোমাকে জানাই
+            জন্মদিনের আন্তরিক শুভেচ্ছা ও অভিনন্দন।
+            🎂💐
+        </p>
+
+        <p>
+            দেখতে দেখতে তুমি কত বড় হয়ে উঠলে!
+            তোমার সুন্দর স্বভাব, ভদ্রতা আর মেধা
+            সব সময়ই আমাদের গর্বিত করে।
+        </p>
+
+        <p>
+            সৃষ্টিকর্তার কাছে প্রার্থনা করি,
+            তিনি যেন তোমার জীবনের প্রতিটি পথ
+            সহজ ও সুন্দর করে দেন।
+        </p>
+
+        <p>
+            তুমি জীবনে যে লক্ষ্যই নির্ধারণ করো না কেন,
+            সততা ও নিষ্ঠার সাথে যেন তা অর্জন করতে পারো।
+        </p>
+
+        <p>
+            তোমার আগামী দিনগুলো সুখ, শান্তি,
+            সুস্বাস্থ্য এবং সাফল্যে ভরে উঠুক।
+        </p>
+
+        <div class="final">
+            🎉 শুভ জন্মদিন! 🌸🎂💖
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+function showMessage(){
+
+    document.getElementById("message")
+    .classList.add("show");
+
+    // Create floating hearts
+    for(let i=0;i<25;i++){
+
+        setTimeout(function(){
+
+            const heart=document.createElement("div");
+
+            heart.className="heart";
+
+            const hearts=["❤️","💖","💕","💗","🌸","✨"];
+
+            heart.innerHTML=
+            hearts[Math.floor(Math.random()*hearts.length)];
+
+            heart.style.left=
+            Math.random()*100+"vw";
+
+            heart.style.animationDuration=
+            (3+Math.random()*3)+"s";
+
+            document.body.appendChild(heart);
+
+            setTimeout(()=>{
+                heart.remove();
+            },6000);
+
+        },i*100);
+
+    }
+}
+
+</script>
+
+</body>
+  </html>
